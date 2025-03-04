@@ -1,0 +1,15 @@
+armature:
+  match:
+    type: rigify
+  joints:
+    verts: asset
+    file: joints.npz
+  tweaks: ../boots-tweaks.yaml
+  bones:
+    groups:
+      -
+        opts:
+          axis_z: [0.0, 0.0, 1.0]
+          offs_head: [-0.01, 0.0, 0.0]
+          offs_tail: [0.01, 0.0, 0.0]
+        bones: [heel.02.L, heel.02.R]

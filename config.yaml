@@ -1,0 +1,99 @@
+title: MB-Lab female (AGPL3)
+author: Manuel Bastioni
+license: AGPL3
+
+char_file: char.blend
+char_obj: mb_female
+material_lib: ../../shared_lib.blend
+basis: Caucasian
+
+default_type: Caucasian
+default_armature: tweaked
+default_hair_length: 0.3
+
+randomize_excl_regex: ^Fantasy
+
+hair_library: hair.blend
+hair_obj: hair
+hairstyles:
+    - symmetric1
+    - back1
+    - frontback1
+
+armature_defaults:
+    type: rigify
+    bones: ../../mb_bones.yaml
+    file: ../../shared_lib.blend
+    obj_name: metarig
+
+armature:
+    tweaked:
+        title: Tweaked
+        tweaks:
+            - ../../tweaks/rigify_default.yaml
+        sliding_joints:
+            elbows:
+                upper_bone: upper_arm
+                lower_bone: forearm
+                side: [".L", ".R"]
+                influence: 0.08
+            knees:
+                upper_bone: thigh
+                lower_bone: shin
+                side: [".L", ".R"]
+                influence: 0.05
+    muscles:
+        title: Basic muscles
+        mixin: muscles
+        mixin_bones:
+            default:
+                axis_z: keep
+        tweaks:
+            - ../../tweaks/rigify_default.yaml
+            - ../../tweaks/muscles.yaml
+    original:
+        title: Original
+        tweaks: ../../tweaks/rigify_default.yaml
+    gaming:
+        title: Gaming
+        type: regular
+        joints: joints/original.npz
+
+materials:
+    - charmorph_skin
+    - charmorph_censor
+    - MBlab_eyelash
+    - MBlab_pupil
+    - MBlab_human_eyes
+    - charmorph_cornea
+    - charmorph_iris
+    - MBLab_tongue
+    - MBlab_human_teeth
+    - charmorph_nails
+
+types:
+    Caucasian:
+        mtl_props:
+            skin_color: &col1 [0.896, 0.456, 0.279]
+            nails_natural_color: *col1
+    Anime:
+        mtl_props:
+            skin_color: *col1
+            nails_natural_color: *col1
+    Elf:
+        mtl_props:
+            skin_color: *col1
+            nails_natural_color: *col1
+    Latin:
+        L2: Asian
+        mtl_props:
+            skin_color: &col2 [0.485, 0.147, 0.080]
+            nails_natural_color: *col2
+    Asian:
+        mtl_props:
+            skin_color: *col2
+            nails_natural_color: *col2
+    African:
+        mtl_props:
+            skin_color: &col3 [0.07, 0.033, 0.026]
+            nails_natural_color: *col3

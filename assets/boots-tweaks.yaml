@@ -1,0 +1,26 @@
+-
+  tweak: align
+  foot_bone: ORG-foot.L
+  bones:
+    - foot_ik.L
+    - foot_heel_ik.L
+    - MCH-foot_ik.parent.L
+    - MCH-heel.02_roll1.L
+    - MCH-toe.L
+    - MCH-heel.02_rock1.L
+    - MCH-heel.02_rock2.L
+    - MCH-heel.02_roll1.L
+    - MCH-heel.02_roll2.L
+-
+  tweak: align
+  foot_bone: ORG-foot.R
+  bones:
+    - foot_ik.R
+    - foot_heel_ik.R
+    - MCH-foot_ik.parent.R
+    - MCH-heel.02_roll1.R
+    - MCH-toe.R
+    - MCH-heel.02_rock1.R
+    - MCH-heel.02_rock2.R
+    - MCH-heel.02_roll1.R
+    - MCH-heel.02_roll2.R
