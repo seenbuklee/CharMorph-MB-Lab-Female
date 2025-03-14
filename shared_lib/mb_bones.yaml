@@ -1,0 +1,72 @@
+groups:
+  - # Fingers
+    opts:
+      axis_z: [0.0, 0.0, -1.0]
+    bones: [
+      f_index.01.L,  f_index.01.R,  f_index.02.L,  f_index.02.R,  f_index.03.L,  f_index.03.R,
+      f_middle.01.L, f_middle.01.R, f_middle.02.L, f_middle.02.R, f_middle.03.L, f_middle.03.R,
+      f_ring.01.L,   f_ring.01.R,   f_ring.02.L,   f_ring.02.R,   f_ring.03.L,   f_ring.03.R,
+      f_pinky.01.L,  f_pinky.01.R,  f_pinky.02.L,  f_pinky.02.R,  f_pinky.03.L,  f_pinky.03.R,
+
+      palm.01.L, palm.01.R, palm.02.L, palm.02.R, palm.03.L, palm.03.R, palm.04.L, palm.04.R]
+
+  - # Heels
+    opts:
+      axis_z: [0.0, 0.0, 1.0]
+      offs_head: [-0.02, 0.005, -0.002]
+      offs_tail: [0.02, 0.005, -0.002]
+    bones: [heel.02.L, heel.02.R]
+
+bones:
+  breast.L:
+    axis_z: [0.0, 0.0, 1.0]
+  breast.R:
+    axis_z: [0.0, 0.0, 1.0]
+  foot.L:
+    axis_x: [1.0, 0.0, 0.0]
+  foot.R:
+    axis_x: [1.0, 0.0, 0.0]
+  forearm.L:
+    axis_z: [0.0, -1, 0]
+  forearm.R:
+    axis_z: [0.0, -1, 0]
+  hand.L:
+    axis_x: [0.0, 0.0, -1.0]
+  hand.R:
+    axis_x: [0.0, 0.0, 1.0]
+  shin.L:
+    axis_x: [0.98951, 0.0336, 0.14046]
+  shin.R:
+    axis_x: [0.98951, -0.0336, -0.14046]
+  shoulder.L:
+    axis_z: [0.0, 0.0, 1.0]
+    offs_tail: [-0.02072, 0.00651, 0.00362]
+  shoulder.R:
+    axis_z: [0.0, 0.0, 1.0]
+    offs_tail: [0.02072, 0.00651, 0.00362]
+  thigh.L:
+    axis_z: [0.0, 1.0, 0.0]
+  thigh.R:
+    axis_z: [0.0, 1.0, 0.0]
+  thumb.01.L:
+    axis_z: [0.33649, 0.73318, -0.59094]
+  thumb.01.R:
+    axis_z: [-0.33649, 0.73318, -0.59094]
+  thumb.02.L:
+    axis_z: [0.31247, 0.57642, -0.75505]
+  thumb.02.R:
+    axis_z: [-0.31247, 0.57642, -0.75505]
+  thumb.03.L:
+    axis_z: [0.24166, 0.80309, -0.54465]
+  thumb.03.R:
+    axis_z: [-0.24166, 0.80309, -0.54465]
+  toe.L:
+    axis_x: [-1.0, 0.0, 0.0]
+  toe.R:
+    axis_x: [-1.0, 0.0, 0.0]
+  upper_arm.L:
+    axis_x: [0.0, 0.0, -1.0]
+    offs_head: [-0.02072, 0.00651, 0.00362]
+  upper_arm.R:
+    axis_x: [0.0, 0.0, 1.0]
+    offs_head: [0.02072, 0.00651, 0.00362]

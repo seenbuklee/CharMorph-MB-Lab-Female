@@ -4,7 +4,7 @@ license: AGPL3
 
 char_file: char.blend
 char_obj: mb_female
-material_lib: ../../shared_lib.blend
+material_lib: ./shared_lib/shared_lib.blend
 basis: Caucasian
 
 default_type: Caucasian

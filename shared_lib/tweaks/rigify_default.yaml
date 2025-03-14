@@ -1,0 +1,16 @@
+- eyes.yaml
+- cheeks.yaml
+
+# Lower lip stretches too much when opening mouth by default so I raise influence to lower this stretch
+-
+  select: constraint
+  type: COPY_TRANSFORMS
+  bone: MCH-jaw_master.001
+  target_bone: jaw_master
+  set: {influence: 0.85}
+-
+  select: constraint
+  type: COPY_TRANSFORMS
+  bone: MCH-jaw_master.002
+  target_bone: jaw_master
+  set: {influence: 0.4}
