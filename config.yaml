@@ -22,15 +22,15 @@ hairstyles:
 
 armature_defaults:
     type: rigify
-    bones: ../../mb_bones.yaml
-    file: ../../shared_lib.blend
+    bones: ./shared_lib/mb_bones.yaml
+    file: ./shared_lib/shared_lib.blend
     obj_name: metarig
 
 armature:
     tweaked:
         title: Tweaked
         tweaks:
-            - ../../tweaks/rigify_default.yaml
+            - ./shared_lib/tweaks/rigify_default.yaml
         sliding_joints:
             elbows:
                 upper_bone: upper_arm
@@ -49,11 +49,11 @@ armature:
             default:
                 axis_z: keep
         tweaks:
-            - ../../tweaks/rigify_default.yaml
-            - ../../tweaks/muscles.yaml
+            - ./shared_lib/tweaks/rigify_default.yaml
+            - ./shared_lib/tweaks/muscles.yaml
     original:
         title: Original
-        tweaks: ../../tweaks/rigify_default.yaml
+        tweaks: ./shared_lib/tweaks/rigify_default.yaml
     gaming:
         title: Gaming
         type: regular
