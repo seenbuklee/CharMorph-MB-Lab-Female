@@ -1,3 +1,8 @@
 "*": Non-Color
 
 albedo: sRGB
+iris_bump: Non-Color
+sclera_mask: Non-Color
+translucent_mask: Non-Color
+sclera_color: sRGB
+iris_color: sRGB
